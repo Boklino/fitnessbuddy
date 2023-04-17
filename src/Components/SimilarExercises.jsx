@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from '@mui/material';
 import React from 'react';
 import HorizontalScrollbar from './HorizontalScrollbar';
+import Loader from './Loader';
 
 const SimilarExercises = ({ exercisesTarget, exercisesEquipment }) => {
 	console.log('z', exercisesTarget);
@@ -21,7 +22,11 @@ const SimilarExercises = ({ exercisesTarget, exercisesEquipment }) => {
 					p: '20px',
 				}}
 			>
-				<HorizontalScrollbar data={exercisesTarget} />
+				{exercisesTarget.length ? (
+					<HorizontalScrollbar data={exercisesTarget} />
+				) : (
+					<Loader />
+				)}
 			</Stack>
 			<Typography variant='h4' mb='20px' ml='50px' mt='80px'>
 				Exercises that use the same equipment
@@ -34,7 +39,11 @@ const SimilarExercises = ({ exercisesTarget, exercisesEquipment }) => {
 					p: '20px',
 				}}
 			>
-				<HorizontalScrollbar data={exercisesEquipment} />
+				{exercisesEquipment.length ? (
+					<HorizontalScrollbar data={exercisesEquipment} />
+				) : (
+					<Loader />
+				)}
 			</Stack>
 		</Box>
 	);
