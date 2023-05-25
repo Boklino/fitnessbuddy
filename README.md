@@ -1,6 +1,6 @@
 # Fitness Buddy :muscle:
 
-![[FitnessBuddy Preview] Preview](/preview.png)
+![[FitnessBuddy Preview] Preview](https://github.com/Boklino/gym-exercises/blob/main/prev.JPG)
 
 Fitness Buddy is an interactive, user-friendly web application designed to help you create your own custom workout plans tailored to your fitness needs. Easily accessible and designed with an intuitive UI, Fitness Buddy is your personal virtual fitness trainer.
 
